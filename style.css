@@ -10,9 +10,9 @@ body {
     background-color: #FAFAFA;
 }
 .page {
-    width: 210mm;
-    min-height: 297mm;
-    padding: 5mm;
+    height: 210mm;
+    min-width: 297mm;
+    padding: 10mm;
     margin: 2.5mm auto;
     border: 1px #D3D3D3 solid;
     border-radius: 5px;
@@ -21,18 +21,20 @@ body {
     display: table;
 }
 .subpage {
-    height: 257mm;
+    width: 257mm;
+    height: 170mm;
     vertical-align: middle;
+    margin: 2.5mm auto;
 }
 @page {
-    size: A4; /* landscape */
+    size: A4 landscape;
     margin: 0;
 }
 .sheet {
-    top: -22mm;
-    left: 44mm;
-    transform: rotate(90deg);
+    display: inline-block;
     position: relative;
+}
+main {
     height: 182.2mm;
     width: 112.2mm;
     display: grid;
@@ -42,10 +44,6 @@ body {
     border: .6mm solid #1a1a1a;
     padding: .6mm;
 }
-.sheet:nth-child(even) {
-    top: -90mm;
-}
-
 section {
     margin: 1mm;
     padding: 1.2mm;
